@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "todoapp-network",
+    name: "TodoAppNetwork",
     platforms: [.macOS(.v10_15),
                 .iOS(.v14),
                 .tvOS(.v10),
@@ -12,8 +12,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "todoapp-network",
-            targets: ["todoapp-network"])
+            name: "TodoAppNetwork",
+            targets: ["TodoAppNetwork"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,16 +26,16 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "todoapp-network",
+            name: "TodoAppNetwork",
             dependencies: [
                 "Alamofire",
                 "Swinject",
                 .product(name: "Logging", package: "swift-log")
             ]),
         .testTarget(
-            name: "todoapp-networkTests",
+            name: "TodoAppNetworkTests",
             dependencies: [
-                "todoapp-network",
+                "TodoAppNetwork",
                 .product(name: "Logging", package: "swift-log")
             ])
     ]

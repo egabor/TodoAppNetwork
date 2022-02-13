@@ -1,6 +1,6 @@
 import Foundation
 import Swinject
-import todoapp_network
+import TodoAppNetwork
 import Logging
 
 struct TestUtilAssembly: Assembly {

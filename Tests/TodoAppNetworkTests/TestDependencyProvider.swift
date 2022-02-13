@@ -1,4 +1,4 @@
-@testable import todoapp_network
+@testable import TodoAppNetwork
 import Foundation
 import Swinject
 
@@ -13,7 +13,7 @@ class TestDependencyProvider {
         assembler = Assembler(
             [
                 TestUtilAssembly(),
-                todoapp_network.NetworkAssembly(
+                TodoAppNetwork.NetworkAssembly(
                     logLevel: .trace,
                     baseUrl: Arguments.baseUrl,
                     apiKey: Arguments.apiKey
@@ -25,7 +25,7 @@ class TestDependencyProvider {
 }
 
 @propertyWrapper
-struct TestInjected<T> {
+internal struct TestInjected<T> {
     private let resolver = (TestDependencyProvider.shared.assembler.resolver as! Container).synchronize() // swiftlint:disable:this force_cast line_length
 
     init() {}

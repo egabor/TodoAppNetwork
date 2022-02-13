@@ -1,4 +1,4 @@
-@testable import todoapp_network
+@testable import TodoAppNetwork
 import Foundation
 
 struct Arguments {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TodoApiProtocol {
+public protocol TodoApiProtocol {
 
     func getTodoList() async throws -> [Todo.Item.Response]
 

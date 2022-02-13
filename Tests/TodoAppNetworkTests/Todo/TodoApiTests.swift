@@ -1,5 +1,5 @@
 import XCTest
-@testable import todoapp_network
+@testable import TodoAppNetwork
 import Combine
 import Logging
 
