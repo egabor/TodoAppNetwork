@@ -1,3 +1,3 @@
-# <#projectname#>-network
+# todoapp-network
 
 A description of this package.
